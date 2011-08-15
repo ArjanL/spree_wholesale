@@ -1,7 +1,7 @@
 <fieldset class="leftie">
   
   <fieldset class="user-details">
-    <legend>User</legend>
+    <legend>Account Gegevens</legend>
     <%= fields_for :user, @user do |uf| %>
       <%= render "shared/error_messages", :target => @user %>
       <%= render 'shared/user_form', :f => uf %>
