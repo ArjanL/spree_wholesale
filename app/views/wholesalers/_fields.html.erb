@@ -9,7 +9,7 @@
   </fieldset>
 
   <fieldset class="wholesaler-details">
-    <legend>Company Information</legend>
+    <legend>Bedrijfs Informatie</legend>
     
     <%= render "shared/error_messages", :target => @wholesaler %>
     
@@ -59,7 +59,7 @@
 <fieldset class="rightie">
   
   <fieldset class="billing-details">
-    <legend>Billing Address</legend>
+    <legend>Factuur Adres</legend>
     <%= fields_for :bill_address, @bill_address do |af| %>
       <%= render "shared/error_messages", :target => @bill_address %>
       <%= render 'shared/address_form', :form => af, :address => @bill_address, :billing => true %>
@@ -67,7 +67,7 @@
   </fieldset>
   
   <fieldset class="shipping-details">
-    <legend>Shipping Address</legend>
+    <legend>Aflever Adres</legend>
     <%= fields_for :ship_address, @ship_address do |af| %>
       <%= render "shared/error_messages", :target => @ship_address %>
       <%= render 'shared/address_form', :form => af, :address => @ship_address %>
