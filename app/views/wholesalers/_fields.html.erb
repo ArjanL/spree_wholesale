@@ -14,7 +14,7 @@
     <%= render "shared/error_messages", :target => @wholesaler %>
     
     <p>
-      <%= form.label t('wholesalers.index.company') %><br/>
+      <%= form.label :bedrijfnaam %><br/>
       <%= form.text_field :company, :class => 'required' %><span class="req">*</span>
     </p>
     <p>
