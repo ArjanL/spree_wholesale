@@ -18,15 +18,15 @@
       <%= form.text_field :company, :class => 'required' %><span class="req">*</span>
     </p>
     <p>
-      <%= form.label :buyer_contact %><br/>
+      <%= form.label :naam_contactpersoon %><br/>
       <%= form.text_field :buyer_contact, :class => 'required' %><span class="req">*</span>
     </p>
     <p>
-      <%= form.label :manager_contact %><br/>
+      <%= form.label :naam_manager %><br/>
       <%= form.text_field :manager_contact, :class => 'required' %><span class="req">*</span>
     </p>
     <p>
-      <%= form.label :phone %><br/>
+      <%= form.label :telefoon %><br/>
       <%= form.text_field :phone, :class => 'required' %><span class="req">*</span>
     </p>
     <p>
@@ -34,15 +34,15 @@
       <%= form.text_field :fax %>
     </p>
     <p>
-      <%= form.label :resale_number %><br/>
+      <%= form.label :KVK %><br/>
       <%= form.text_field :resale_number %>
     </p>
     <p>
-      <%= form.label :taxid %><br/>
+      <%= form.label :BTW_nummer %><br/>
       <%= form.text_field :taxid, :class => 'required' %><span class="req">*</span>
     </p>
     <p>
-      <%= form.label :web_address %><br/>
+      <%= form.label :website %><br/>
       <%= form.text_field :web_address %>
     </p>
     <p>
@@ -50,7 +50,7 @@
       <%= form.select :terms, Wholesaler.term_options, :class => 'required' %><span class="req">*</span>
     </p>
     <p>
-      <%= form.label :notes %><br/>
+      <%= form.label :opmerking %><br/>
       <%= form.text_area :notes %>
     </p>
   </fieldset>
