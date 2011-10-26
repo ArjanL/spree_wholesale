@@ -8,7 +8,7 @@ ProductsHelper.module_eval do
     amount += Calculator::Vat.calculate_tax_on(product_or_variant) if Spree::Config[:show_price_inc_vat]
     prices = [amount]
     if wholesaler_signed_in? && product_or_variant.is_wholesaleable?
-      prices[0] = [prices[0], "msrp"]
+      prices[0] = [prices[0], "per kg."]
       prices << [product_or_variant.wholesale_price, "wholesale"]
     end
     format_as_currency = options.delete(:format_as_currency)
