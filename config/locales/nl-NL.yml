@@ -43,7 +43,7 @@ nl-NL:
     
     hooks:
       product_form_right:
-        master_wholesale_price: "Master Groothandelprijs"
+        master_wholesale_price: "Prijs per KG"
       admin_orders_index_search:
         show_wholesale_orders: "Alleen bestellingen groothandel"
         
