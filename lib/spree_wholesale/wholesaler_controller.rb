@@ -48,6 +48,7 @@ module SpreeWholesale
       end
       
       def new
+        @title = "Offerte aanvragen bij thee groothandel Evans &amp; Watson"
         @wholesaler ||= Wholesaler.new(params[:wholesaler])
       end
       
